@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script
+      crossorigin
+      src="https://unpkg.com/react@18/umd/react.production.min.js"
+    ></script>
+    <script
+      crossorigin
+      src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"
+    ></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="text/babel">
+      function guessNum() 
+      {
+        let myNums = [20,77,89,7,46,34,43,88,91.13];
+        let num = myNums[Math.floor(Math.random()* myNums.length)] ;
+        return num;
+      }
+      function GetNum()
+      {
+        let num =guessNum();
+        return(<div>
+            <p>The number is {num}</p>
+            <small>{(num%2==0)? <span>Even Number</span>: <span></span>}</small>
+            </div>);
+
+      }
+      ReactDOM.render(<GetNum/>,document.querySelector("#root"))
+    </script>
+  </body>
+</html>
