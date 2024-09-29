@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        class employee{
+            constructor(name,salary)
+            {
+                this.name = name;
+                this.salary = salary;
+            }
+            toString()
+            {
+                return(`${this.name},${this.salary}<br>`)
+            }
+        }
+        class inter extends employee{}
+        let emp = new inter("Bhawana",23000);
+        document.write(emp.toString());
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

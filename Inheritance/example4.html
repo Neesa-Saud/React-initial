@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        class Circle{
+            constructor(radius)
+            {
+                this.radius = radius;
+            }
+            area()
+            {
+                return(Math.PI*Math.pow(this.radius,2));
+            }
+        }
+        class cylinder extends Circle{
+            constructor(radius,height)
+            {
+               super(radius);
+                this.height= height;
+            }
+            area()
+            {
+                return(2*super.area()+2*Math.PI*this.radius*this.height);
+            }
+            volume()
+            {
+                return(super.area()*this.height)
+            }
+        }
+        let data = new cylinder(10,20);
+        document.write(data.area());
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

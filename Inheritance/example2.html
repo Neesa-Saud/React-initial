@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+    class vehicle{
+        constructor(){
+            document.write("This is parent....<br>")
+        }
+        accelerate(){
+        document.write("Accelerating......<br> ");
+        }
+    }
+    class car extends vehicle{
+        constructor(){
+            super();
+            this.color = "Red";
+        }
+        reverse()
+        {
+            document.write("reversing");
+        }
+    }
+    let data = new car();
+    data.reverse();
+    data.accelerate();
+    document.write(`The colour of car is ${data.color}`);
+</script>
+<body>
+    
+</body>
+</html>
