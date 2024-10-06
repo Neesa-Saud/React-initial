@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Getter Setter</title>
+     <script>
+        class Student{
+              constructor(fname,lname)
+               {
+                this.fname = fname;
+                this.lname = lname;
+               }
+               get fullname()
+               {
+                return `${this.fname+"     "+ this.lname}`;
+               }
+              set fullname(name)
+              {
+                let arr = name.split(" ");
+                this.fname= arr[0];
+                this.lname=arr[1];
+              }
+        }
+        let p = new Student("Priya","Bhatta");
+        document.write("Fullname is "+p.fullname);
+        p.fullname="Bishal Mahar";
+        document.write("<br> Fullname is "+p.fullname);
+     </script>
+</head>
+<body>   
+</body>
+</html>
