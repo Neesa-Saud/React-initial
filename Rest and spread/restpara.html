@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rest parameters</title>
+    <script>
+        function add(name,...args)
+        {
+           let sum=0;
+            for (let x of args)
+        {
+            sum = x +sum;
+        }
+        document.write("Name is :"+name + " marks is :"+ sum + "<br>");
+        }
+        add("arichit",10,10);
+        add("punam",10,20,30);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
