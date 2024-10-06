@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Private component</title>
+    <script>
+        class demo {
+            #b; //private element must be defined outside the constructor to pass value from outside the class
+            constructor(a,b){
+            this.a=a;
+            this.#b=b;
+            show()
+            {
+                document.write("a is " +this.a);
+                document.write("<br> b is " +this.#b);
+            }
+        }
+    } 
+        let p = new demo (10,20);
+        p.show();
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

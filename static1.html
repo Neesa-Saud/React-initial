@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>static componenet</title>
+    <script>
+        class employee{
+            static company = "Google";
+            constructor(name,salary){
+                this.name = name;
+                this.salary = salary;
+            }
+            show()
+            {
+                document.write("<br>Name : " +this.name+ "Salary : " +this.salary+ "Company : " +employee.company);
+            }
+        }
+        let e1 = new employee("Ashutosh kalauni",23000);
+        let e2 = new employee("Ashutosh Bhatta",45000);
+        let e3 = new employee("Ashutosh karki",60000);
+        e1.show();
+        e2.show();
+        e3.show();
+    </script>
+</head>
+<body>  
+</body>
+</html>
